@@ -23,9 +23,14 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+*{
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho";
+}
+
  html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  height: 100%;
 }
 
 /* Sections
@@ -37,6 +42,7 @@
 
 body {
   margin: 0;
+  height: 100%;
 }
 
 /**

@@ -1,3 +1,8 @@
 $(function() {
-  $(".user-session-container").fadeIn(2000);
+  $(window).load(function() {
+    $(".session-new-container").fadeIn(2000, function() {
+      $("h2").fadeIn(2000, function() {
+        $(".main-form").fadeIn(2000)});
+    })
+  });
 });
