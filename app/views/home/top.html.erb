@@ -6,9 +6,11 @@
     <p class="message-4">さあ一緒に<br>新たな一歩を踏み出しましょう。</p>
   </div>
 
-  <div class="btn">
-    <div class="start-btn">
-    </div>
+  <div class="start-btn">
+    <%= link_to "始める", new_user_session_path, method: :get %>
   </div>
   
+  <div class="footer">
+    <%= link_to "skip", new_user_session_path, metho: :get %>
+  </div>
 </div>
