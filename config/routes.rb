@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'home/top' => "home#top"
 
   get "event/top" => "event#top"
+  post "event/top" => "event#create"
 end

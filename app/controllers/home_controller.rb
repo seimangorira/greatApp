@@ -4,6 +4,7 @@ class HomeController < ApplicationController
   end
 
   def index
+    @contents = Event.all.order(created_at: :desc)
   end
 
   private

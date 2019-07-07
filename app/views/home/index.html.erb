@@ -15,4 +15,12 @@
       <%= link_to("GO!!", "event/top", method: :get) %>
     </div>
   </div>
+
+  <div class="negai-contents">
+    <% @contents.each do |content| %>
+      <div class="negai-content">
+          <%= content.content %>
+      </div>
+    <% end %>
+  </div>
 </div>

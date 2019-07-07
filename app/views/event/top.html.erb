@@ -1,0 +1,13 @@
+<div class="negai-info">
+  <p>あなたの願いを教えてください。</p>
+  <p class="example">
+    但し、終了系は以下の文面で終わらせてください。</br>叶えたい・欲しい・なりたい</br>やりたい・したい・行きたい</br>
+    ※この文面以外で終わらせるとあなたの願いは叶いません。
+  </p>
+  <div class="negai-form">
+    <%=form_tag("/event/top", method: :post)do%>
+      <input class="box" type="text" name="content">
+      <input class="btn" type="submit" name="sent">
+    <% end %>
+  </div>
+</div>
